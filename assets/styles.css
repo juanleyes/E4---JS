@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serifs;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 45px;
+  font-size: 45px;
+  font-weight: 600;
+  border-bottom: 2px solid;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  padding: 15px;
+  height: 45px;
+  width: 300px;
+}
+
+.submit {
+  background: black;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 35px;
+}
+
+.card__container {
+  margin: 45px;
+}
+
+.card {
+  background: black;
+  min-width: 250px;
+  padding: 10px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__img {
+  width: 170px;
+}
+
+.card__name {
+  color: white;
+  font-weight: 450;
+}
+
+.card__type {
+  color: black;
+  font-weight: 500;
+  background: white;
+  padding: 2px 5px;
+  width: fit-content;
+}
+
+.card__info {
+  color: white;
+  font-size: 14px;
+}
