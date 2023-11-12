@@ -17,11 +17,11 @@ const searchPokemon = async (e) => {
   const fetchedPokemon = await fetchPokemons(pokemonInput.value);
 
   //REVISAR MENSAJE DE NO ENCONTRADO
-  //if (fetchedPokemon === fetchedPokemos) {
-  //  alert("Este Pokémon no existe");
-  //  form.reset();
-  //  return;
-  //}
+  if (!fetchedPokemon.id) {
+    alert("Este Pokémon no existe");
+    form.reset();
+    return;
+  }
 
   //fc renderizar pokemon
   renderPokemonCard(fetchedPokemon);
